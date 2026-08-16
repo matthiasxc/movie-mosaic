@@ -1,0 +1,16 @@
+"""Mosaic layout and letterbox-detection constants."""
+
+GRID = 70
+TILE_SIZE = 16
+TILE_COUNT = GRID * GRID
+MOSAIC_SIZE = GRID * TILE_SIZE
+
+# Decode at this max height so a 2-hour 1080p file does not stay at full res.
+DECODE_MAX_HEIGHT = 360
+
+LETTERBOX_SAMPLE_COUNT = 40
+LETTERBOX_EDGE_SKIP = 0.05
+LETTERBOX_LUMINANCE_THRESHOLD = 16.0
+LETTERBOX_ALL_BLACK_MEAN = 8.0
+LETTERBOX_MIN_BAR_FRACTION = 0.02
+LETTERBOX_MIN_SAMPLES = 5
